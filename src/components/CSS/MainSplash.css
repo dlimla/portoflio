@@ -1,0 +1,13 @@
+.mainCon {
+    background-color: rgb(87, 143, 112);
+    height: 980px;
+    width: 100%;
+    overflow: hidden;
+    transform: skew(0deg, 10deg);
+    margin: 40px 0px 0px 0px;
+}
+
+.innerCon {
+    transform: skew(0deg, -10deg);
+    /* background-color: #ba9077; */
+    }

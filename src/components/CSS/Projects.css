@@ -1,0 +1,104 @@
+.b1 {
+    top:-15%;
+    right:4%;
+}
+
+.b2 {
+    top:23%;
+    right:18%;
+}
+
+.b3 {
+    top:60%;
+    right:32%;
+}
+
+.b4 {
+    top: 98%;
+    right: 46%;
+}
+
+.b5 {
+    top: 96%;
+    right: 8%;
+}
+
+.b6 {
+    top: 105%;
+    right: 10%;
+}
+
+.b7 {
+    top: 135%;
+    right: 23%;
+}
+
+.b2 h2,
+.b1 h2,
+.b3 h2,
+.b4 h2,
+.b5 h2,
+.b6 h2,
+.b7 h2 {
+    position: absolute;
+    visibility: hidden;
+    color:white;
+    opacity: 0;
+    transition: all .25s ease;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    width: 250px;
+    height: 50px;
+    background-color: rgb(61, 255, 190);
+    margin: 100px 0px 0px 80px;
+    border-radius: 15px;
+    color: black;
+}
+
+
+.b2:hover h2,
+.b1:hover h2,
+.b3:hover h2,
+.b4:hover h2,
+.b5:hover h2,
+.b6:hover h2,
+.b7:hover h2 {
+    display: inline;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.b1:hover,
+.b2:hover,
+.b3:hover,
+.b4:hover,
+.b5:hover,
+.b6:hover,
+.b7:hover {
+    opacity: 0.5;
+}
+
+.mainContainer {
+    background-color: #5a5c51;
+    height: 880px;
+    width: 100%;
+    overflow: hidden;
+    transform: skew(0deg, -10deg);
+    margin: 40px 0px 0px 0px;
+}
+
+.innerContent {
+    transform: skew(0deg, 10deg);
+    /* background-color: #ba9077; */
+    }
+
+.displayDiv {
+    display: flex;
+    margin: 200px 0px 0px 100px;
+}
+
+.b2, .b1, .b3,.b4,.b5,.b6,.b7 {
+    width: 410px;
+    height: 314px;
+}

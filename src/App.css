@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow:hidden;
 }
 
 .App-logo {
@@ -20,3 +21,50 @@
 .App-link {
   color: #09d3ac;
 }
+
+
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity:1;
+  transition: opacity 300ms linear 150ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 150ms linear;
+}
+
+.main_nav_div {
+  display: flex;
+  justify-content: flex-start;
+  margin: 30px 30px 0px 0px;
+  z-index: 2;
+}
+
+.navButtons{
+    width: 30px;
+    height: 30px;
+    margin: 0px 30px 0px 30px;
+    transition: all 1s ease;
+  }
+    .navButtons:hover .navLabels{
+        visibility: visible;
+        transition: all 1s ease;
+    }
+        .navButtons:hover{
+            filter: brightness(0) invert(0.8);
+            transition: all .4s ease;
+        }
+        .navLabels {
+            visibility: hidden;
+        }

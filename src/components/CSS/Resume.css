@@ -1,0 +1,64 @@
+.outter_div {
+    display: flex;
+    justify-content: center;
+}
+
+    .main_div {
+        display: flex;
+        flex-wrap: wrap;
+        width: 800px;
+        justify-content: center;
+    }
+
+        .my_desc_div {
+            width: 600px;
+        }
+
+        .edu_div {
+            line-height: 1;
+            text-align: left;
+        }
+            .edu_div div {
+                width: 500px;
+            }
+
+        .contact_div {
+            display: flex;
+            justify-content: center;
+            width: 300px;
+            flex-wrap: wrap;
+            height: 80px;
+            background-color: antiquewhite;
+            margin: 0px 250px 0px 250px;
+        }
+            .contact_div p {
+                line-height: 0;
+                padding: 0px 20px 0px 20px;
+                height: 10px;
+            }
+
+            .skills_div {
+                display: flex;
+                width: 700px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+                .skills_div h2 {
+                    width: 700px;
+                }
+                .skills_div p {
+                    padding: 0px 20px 0px 20px;
+                    flex-wrap: wrap;
+                }
+
+.rightDiv {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    text-align: left;
+}
+
+.work_edu_exp_div {
+    display: flex;
+}
