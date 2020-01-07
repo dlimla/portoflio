@@ -51,14 +51,14 @@ export default class Resume extends Component {
                 {name: 'SQL', pic:SQL},
                 {name: 'HTML', pic:HTML},
                 {name: 'CSS', pic:CSS},
-                {name: 'Ruby', pic:RUBY}
             ],
 
-            contact: [
+            contact1: [
                 {link:'danheelim @gmail.com', pic:EMAIL},
                 {link:'Los Angeles', pic:LOCATION},
                 {link:'(213) 500-4646', pic:PHONE},
             ]
+
         }
     }
     render() {
@@ -72,11 +72,10 @@ export default class Resume extends Component {
                     <div className="resume_inner_con">
 
                         <Nav/>
-
-                        <h2>About Me</h2>
                         <div className="outter_div">
                             <div className="main_div">
                                 <div className="my_desc_div">
+                                    <h2>About Me</h2>
                                     <p>
                                         A Full Stack Web/Software Developer with 4+ years working as a contractual website designer and 3D Generalist.
                                     </p>
@@ -86,14 +85,13 @@ export default class Resume extends Component {
                                 </div>
 
                                 <div className="contact_div">
-                                    {this.state.contact.map((contact) =>
+                                    {this.state.contact1.map((contact) =>
                                         <div class="flip-card">
                                             <div class="flip-card-inner">
 
                                                 <div class="flip-card-front">
                                                     <img alt={NTF} src={contact.pic}/>
                                                 </div>
-
                                                     <div class="flip-card-back">
                                                         <p>{contact.link}</p>
                                                     </div>
@@ -101,81 +99,75 @@ export default class Resume extends Component {
                                             </div>
                                     )}
 
-                                    {/* <div className="indi_card">
-                                        <Flippy
-                                            flipOnHover={true}
-                                            flipOnClick={false}
-                                            flipDirection="horizontal"
-                                            >
-                                            <FrontSide>
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
                                                 <img  alt={NTF} src={LINKENIN}/>
-                                            </FrontSide>
-                                            <BackSide className="contact_cardBack">
+                                            </div>
+                                            <div class="flip-card-back">
                                                 <a className="contact_cardback_link"href="https://www.linkedin.com/in/danheelim/" target="_blank">LinkedIn</a>
-                                            </BackSide>
-                                        </Flippy>
-                                    </div> */}
-
-                                    {/* <div className="indi_card">
-                                        <Flippy
-                                            flipOnHover={true}
-                                            flipOnClick={false}
-                                            flipDirection="horizontal"
-                                            >
-                                            <FrontSide>
-                                                <img  alt={NTF} src={GITHUB}/>
-                                            </FrontSide>
-                                            <BackSide className="contact_cardBack">
-                                                <a className="contact_cardback_link"href="https://github.com/dlimla" target="_blank">GitHub</a>
-                                            </BackSide>
-                                        </Flippy>
+                                            </div>
+                                        </div>
                                     </div>
 
-                                    <div className="indi_card">
-                                        <Flippy
-                                            flipOnHover={true}
-                                            flipOnClick={false}
-                                            flipDirection="horizontal"
-                                            >
-                                            <FrontSide>
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img  alt={NTF} src={GITHUB}/>
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <a className="contact_cardback_link"href="https://github.com/dlimla" target="_blank">GitHub</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
                                                 <img  alt={NTF} src={WEBSITE}/>
-                                            </FrontSide>
-                                            <BackSide className="contact_cardBack">
+                                            </div>
+                                            <div class="flip-card-back">
                                                 <NavLink to="/">
-                                                    <a className="contact_cardback_link" href="https://github.com/dlimla" target="_blank">Website</a>
+                                                    <a
+                                                        className="contact_cardback_link"
+                                                        href="https://github.com/dlimla"
+                                                        target="_blank">
+                                                            Website
+                                                    </a>
                                                 </NavLink>
-                                            </BackSide>
-                                        </Flippy>
-                                    </div>*/}
-                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h2 className="skills_title">Skills</h2>
 
                                 <div className="skills_div">
-                                    <h2>Skills</h2>
 
                                         {this.state.tech.map((tech) =>
-                                                <div>
-                                                    <Flippy
-                                                    className="flip_card"
-                                                        flipOnHover={true}
-                                                        flipOnClick={false}
-                                                        flipDirection="horizontal"
-                                                        >
-                                                        <FrontSide className="cardFront">
-                                                            <img className="skillimgSize" alt={NTF} src={tech.pic}/>
-                                                        </FrontSide>
-                                                        <BackSide className="cardBack">
-                                                            <p className="back_card_p">{tech.name}</p>
-                                                        </BackSide>
-                                                    </Flippy>
-                                                </div>
+                                            <div>
+                                                <Flippy
+                                                className="flip_card"
+                                                    flipOnHover={true}
+                                                    flipOnClick={false}
+                                                    flipDirection="horizontal"
+                                                    >
+                                                    <FrontSide className="cardFront">
+                                                        <img className="skillimgSize" alt={NTF} src={tech.pic}/>
+                                                    </FrontSide>
+                                                    <BackSide className="cardBack">
+                                                        <p className="back_card_p">{tech.name}</p>
+                                                    </BackSide>
+                                                </Flippy>
+                                            </div>
                                         )}
 
                                 </div>
 
                                 <div className="work_edu_exp_div">
                                     <div className="edu_div">
-                                    <h2>Education</h2>
-                                        <div>
+                                            <h2>Education</h2>
+                                        <div className="sectioned_div">
                                             <h4>Computer Science and Web Development</h4>
                                             <p>Lambda School</p>
                                             <p>08/2018 - present</p>
@@ -198,14 +190,14 @@ export default class Resume extends Component {
                                             </ul>
                                         </div>
 
-                                        <div>
                                             <h2>Work Experience</h2>
+                                        <div className="sectioned_div">
                                             <div>
                                                 <h4>Department Head of Paint (01/2016-present)</h4>
                                                 <p>DIY Home Center</p>
                                                 <ul>
                                                     <li>Managed paint department staff</li>
-                                                    <li>Kept upkeep on relivent technologices requried by the department. (e.g: Calibrated color matching software, color tint dispenser is kept clean filled when needed)</li>
+                                                    <li>Kept upkeep on relivent technologices requried by the department. (e.g: Calibrated color matching software, color tint dispenser is kept clean and filled when needed)</li>
                                                     <li>Maintained inventory.</li>
                                                 </ul>
                                             </div>
@@ -219,7 +211,7 @@ export default class Resume extends Component {
                                                     <li>Designed in part the main landing page as well as personalized the profiles of clients and vets.</li>
                                                     <li>Tech: Ruby on Rails, Postgress, GoogleAPI, HTML, CSS, AWS</li>
                                                     <li>Application: <a href="http://petmedmd.com">PetMed</a></li>
-                                                    <li>GitHub: <a href="https://github.com/RandallSnout/PetMed">https://github.com/RandallSnout/PetMed</a></li>
+                                                    <li>GitHub: <a href="https://github.com/RandallSnout/PetMed">PetMed</a></li>
                                                 </ul>
                                             </div>
 
@@ -245,10 +237,10 @@ export default class Resume extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                    {/* =========================== */}
+        {/* ================================================================== */}
                                     <div className="rightDiv">
-                                        <div>
                                             <h2>Personal Projects</h2>
+                                        <div className="sectioned_div">
                                             <div>
                                                 <h4>Island Adventure(11/2019)</h4>
                                                 <ul>
@@ -284,8 +276,16 @@ export default class Resume extends Component {
                                                     <li>Was responsible for the front end portion of the project that developed the client's ability to edit their own information.  Also gave the option for a user to give feedback to a contractor and allowing the contractor to view it. </li>
                                                     <li>Part of a remote team of 6 completing the project in a 10 week time period</li>
                                                     <li>Tech: React - Redux - React Hooks - NodeJS - Postgres - Stripe - Netilfy - Heroku - Javascript - HTML/CSS + Styled Components - GoogleAPI </li>
-                                                    <li>Application: </li>
-                                                    <li>GitHub:</li>
+                                                    <li>Application:
+                                                            <a href="https://affectionate-almeida-c22cb1.netlify.com/"
+                                                            target="blank"> Inquiry
+                                                            </a>
+                                                    </li>
+                                                    <li>GitHub:
+                                                        <a href="https://github.com/pt3-labs-contractor/PT3Labs_Contractor_FE"
+                                                         target="blank"> Inquiry
+                                                        </a>
+                                                    </li>
                                                 </ul>
                                             </div>
                                             <div>
