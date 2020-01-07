@@ -1,3 +1,38 @@
+.resume_background {
+    background-image: url(../../imgs/backgrounds/resume_background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.resume_main_con {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    transform: skew(0deg, 10deg);
+    margin: 0px 0px 0px 0px;
+}
+
+    .resume_main_con::after {
+        content: "";
+        background-color:#c0dfd9;
+        opacity: 0.8;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+    .resume_inner_con {
+            height: 150rem;
+            transform: skew(0deg, -10deg);
+            margin: 3rem 0rem 0rem 0rem;
+        }
+
+
 .outter_div {
     display: flex;
     justify-content: center;
@@ -22,35 +57,126 @@
                 width: 500px;
             }
 
+/* -------------- */
         .contact_div {
             display: flex;
             justify-content: center;
-            width: 300px;
-            flex-wrap: wrap;
-            height: 80px;
-            background-color: antiquewhite;
-            margin: 0px 250px 0px 250px;
+            /* flex-wrap: wrap; */
+            /* width: 100%; */
+            margin: 2rem 0rem 2rem 0rem;
+
         }
-            .contact_div p {
-                line-height: 0;
-                padding: 0px 20px 0px 20px;
-                height: 10px;
+
+            .flip-card {
+                background-color: transparent;
+                width: 300px;
+                height: 200px;
+                border: 1px solid #f1f1f1;
+                perspective: 1000px; /* Remove this if you don't want the 3D effect */
             }
 
-            .skills_div {
+            .flip-card-inner {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                transition: transform 0.8s;
+                transform-style: preserve-3d;
+            }
+
+            .flip-card:hover .flip-card-inner {
+                transform: rotateY(180deg);
+            }
+
+            .flip-card-front, .flip-card-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+            }
+                .flip-card-front img {
+                    width: 7rem;
+                    height: 7rem;
+                }
+
+            .flip-card-front {
+                background-color: #bbb;
+                color: black;
+            }
+
+            .flip-card-back {
+                background-color: dodgerblue;
+                color: white;
+                transform: rotateY(180deg);
+            }
+            /* .flippy-container {
+                margin: 1rem 2rem 1rem 2rem;
+            }
+
+
+            .indi_card img{
+                height: 5rem;
+                width: 5rem;
+            }
+
+            .contact_cardBack {
                 display: flex;
-                width: 700px;
-                flex-wrap: wrap;
+                flex-direction: column;
                 justify-content: center;
+                align-items: center;
+            }
+ 
+                .indi_card p, .contact_cardback_link {
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    font-size: 1rem;
+                    align-items: center;
+                } */
+/* -------------- */
+        .skills_div {
+            display: flex;
+            /* width: 100%; */
+            flex-wrap: wrap;
+            justify-content: center;
+            /* position: relative; */
+        }
+
+            .skills_div h2 {
+                font-family: 'Montserrat', sans-serif;
             }
 
-                .skills_div h2 {
-                    width: 700px;
+                .cardFront, .cardBack {
+                    border-radius: 140rem;
+                    background-color: antiquewhite;
                 }
-                .skills_div p {
-                    padding: 0px 20px 0px 20px;
-                    flex-wrap: wrap;
+
+                .cardBack{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
                 }
+
+            .skills_div h2 {
+                width: 700px;
+            }
+            .skills_div p {
+                padding: 0px 20px 0px 20px;
+                flex-wrap: wrap;
+            }
+                .back_card_p {
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    align-items: center;
+                }
+
+            .skillimgSize, .contactImgSize {
+                height: 7rem;
+                width: 7rem;
+            }
+
+/* -------------- */
 
 .rightDiv {
     display: flex;

@@ -6,10 +6,9 @@ import MainSplash from './components/MainSplash'
 import Projects from './components/Projects'
 import Resume from './components/Resume'
 import Inquiry from './components/Inquiry'
-
-import LinkedIn from './imgs/navPics/linkedin.png'
-import GitHub from './imgs/navPics/github.png'
-import email from './imgs/navPics/email.png'
+import A2Z from './components/A2Z'
+import PetMed from './components/PetMed'
+import Taylor from './components/TaylorAsh'
 
 
 import {
@@ -20,25 +19,26 @@ import {
 function App() {
   return (
     <div className="App">
-        <div className="main_nav_div">
-          <a><img className="navButtons"src={LinkedIn}/></a>
-          <a><img className="navButtons"src={email}/></a>
-          <a><img className="navButtons"src={GitHub}/></a>
-        </div>
         <Route render={({location}) => (
           <TransitionGroup>
-          <CSSTransition
-            key={location.key}
-            timeout={300}
-            classNames="fade"
-            >
-            <Switch location={location}>
-              <Route exact path = "/" component={MainSplash}/>
-              <Route path = "/projects" component={Projects}/>
-              <Route path = "/resume" component={Resume}/>
-              <Route path = "/inquiry" component={Inquiry}/>
-            </Switch>
-          </CSSTransition>
+            <CSSTransition
+              key={location.key}
+              timeout={300}
+              classNames="fade"
+              >
+              <Switch location={location}>
+                <Route exact path = "/" component={MainSplash}/>
+                <Route path = "/projects" component={Projects}/>
+                <Route path = "/resume" component={Resume}/>
+                <Route path = "/inquiry" component={Inquiry}/>
+                <Route path = "/a2z" component={A2Z}/>
+                <Route path = "/petmed" component={PetMed}/>
+                <Route path = "/taylorAsh" component={Taylor}/>
+
+
+
+              </Switch>
+            </CSSTransition>
           </TransitionGroup>
         )}/>
     </div>

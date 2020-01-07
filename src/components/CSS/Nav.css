@@ -1,26 +1,27 @@
 
 .navDiv {
     display: flex;
-    margin: 50px 0px 10px 0px;
-    padding: 30px;
+    margin: 0.5rem 0px 0.5rem 0px;
+    padding: 1rem;
     flex-direction: row;
     justify-content: center;
     z-index: 2;
 }
     .navButtons{
-        margin: 0px 30px 0px 30px;
+        margin: 0px 3rem 0px 30px;
         transition: all 1s ease;
     }
     .navButtons img{
         width: 50px;
         height: 50px;
     }
-        .navButtons:hover .navLabels{
+    .navButtons:hover .navLabels{
+            background-color: #3b3a36;
             visibility: visible;
             transition: all 1s ease;
         }
             .navButtons:hover{
-                filter: brightness(0) invert(0.8);
+                filter: brightness(1) invert(0.8);
                 transition: all .4s ease;
             }
             .navLabels {
