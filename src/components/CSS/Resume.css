@@ -36,6 +36,10 @@
         flex-direction: column;
         justify-content: center;
     }
+        .my_desc_div h2 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
         .my_desc_div p {
             width: 55%;
             margin: 2rem 0rem 0rem 23%;
@@ -51,6 +55,10 @@
             width: 100%;
 
         }
+        .hidden_media_contact_list {
+            visibility: hidden;
+            position: absolute;
+        }
 
             .flip-card {
                 background-color: transparent;
@@ -59,7 +67,7 @@
                 perspective: 1000px;
                 margin: 1rem;
             }
-            
+
                 .flip-card-inner {
                     width: 100%;
                     height: 100%;
@@ -67,11 +75,11 @@
                     transition: transform 0.8s;
                     transform-style: preserve-3d;
                 }
-            
+
             .flip-card:hover .flip-card-inner {
                 transform: rotateY(180deg);
             }
-            
+
             .flip-card-front, .flip-card-back {
                     position: absolute;
                     width: 100%;
@@ -106,6 +114,12 @@
                             transition: all 0.5s ease;                        }
 
 /* -------------- */
+
+.hidden_meda_skill_list {
+    visibility: hidden;
+    position: absolute;
+}
+
 
 .skills_title {
     font-family: 'Montserrat', sans-serif;
@@ -148,27 +162,140 @@
 .work_edu_exp_div {
     margin: 3rem 0rem 0rem 0rem;
     display: flex;
+    /* flex-direction: row; */
     justify-content: center;
 }
     .sectioned_div {
         border-top: 1px solid black;
     }
+
     .rightDiv {
         font-family: 'Montserrat', sans-serif;
-        display: flex;
-        flex-direction: column;
         width: 500px;
         text-align: left;
         margin: 0rem 0rem 0rem 5rem;
     }
-
-
     .edu_div {
         font-family: 'Montserrat', sans-serif;
         line-height: 1;
         text-align: left;
         margin: 0.5rem 0rem 0rem 0rem;
+        width: 500px;
     }
-        .edu_div div {
-            width: 500px;
-        }
+
+        /* ------------------ */
+
+@media (max-width: 1024px) {
+
+    .resume_inner_con {
+        height: 280rem;
+    }
+
+    .work_edu_exp_div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .edu_div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width:35rem;
+        margin: 0rem 0rem 0rem 5rem;
+    }
+
+    .rightDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width:35rem;
+        margin: 0rem 0rem 0rem 5rem;
+    }
+
+    .ul_list{
+        list-style-type: none;
+    }
+
+    .contact_div {
+        width: 80%;
+        margin: 0rem 0rem 0rem 5rem;
+    }
+
+    .contact_me_title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+
+    .main_skill_media_list {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .hidden_meda_skill_list {
+        visibility: visible;
+        position: relative;
+    }
+
+    .media_div_contact {
+        visibility: hidden;
+        position: absolute;
+    }
+    .hidden_media_contact_list {
+        visibility: visible;
+        position: relative;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
+    .resume_inner_con {
+        height: 390rem;
+    }
+
+    .contact_div {
+        width: 100%;
+        margin: 0rem 1rem 0rem 0rem;
+    }
+
+    .edu_div {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: flex-start; */
+        text-align: left;
+        width:15rem;
+        margin: 0rem 0rem 0rem 7rem;
+    }
+
+    .rightDiv {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: flex-start; */
+        text-align: left;
+        width:15rem;
+        margin: 0rem 0rem 0rem 7rem;
+    }
+
+    .main_skill_media_list {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .hidden_meda_skill_list {
+        visibility: visible;
+        position: relative;
+    }
+
+    .media_div_contact {
+        visibility: hidden;
+        position: absolute;
+    }
+    .hidden_media_contact_list {
+        visibility: visible;
+        position: relative;
+    }
+}
