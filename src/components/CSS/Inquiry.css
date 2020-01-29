@@ -1,25 +1,50 @@
+.inq_background {
+    background-image: url(../../imgs/backgrounds/inq.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
 .inq_main_con {
-    background-color: #e9ece5;
-    height: 160rem;
+    /* background-color: #e9ece5; */
+    height: 140rem;
     width: 100%;
     overflow: hidden;
     transform: skew(0deg, 10deg);
     margin: 0px 0px 0px 0px;
 }
 
-    .inq_inner_con {
-        /* height:250rem; */
-        transform: skew(0deg, -10deg);
-        /* margin: 40px 0px 0px 0px; */
+    .inq_main_con::after {
+        content: "";
+        background-color: #e9ece5;
+        opacity: 0.9;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
 
-        /* background-color: #ba9077; */
+    .inq_inner_con {
+        transform: skew(0deg, -10deg);
+        padding: 0rem 0rem 3rem 0rem;
         }
+
+            .inq_nav {
+                padding: 2.5rem 0rem 0rem 0rem;
+                margin: 1.5rem 0rem 0rem 0rem;
+            }
             .div_border{
-                border-bottom: black .02rem solid;
+                /* border-bottom: black .02rem solid; */
                 padding: 0rem 0rem 3rem 0rem;
+                margin: 5rem 0rem 0rem 0rem;
             }
             .inq_title {
                 font-family: 'Montserrat', sans-serif;
+                font-size: 3rem;
+                /* margin: 2rem; */
             }
 
             .inq_links {
@@ -55,40 +80,40 @@
     .sectionText_div div h3 {
         justify-content: flex-start;
         font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
     }
     .sectionText_div p {
         font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+
+
 
     }
     .features {
         font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+
         font-size: 2rem;
     }
         .features_div h4, .features_div p {
             font-family: 'Montserrat', sans-serif;
+            /* font-size: 2rem; */
 
         }
 
     .img_div {
-        border-bottom: black .02rem solid;
+        border-bottom: #3b3a36  .02rem solid;
         padding: 0rem 0rem 2rem 0rem;
     }
         .img_div img{
                 margin: 3rem 5rem 0rem 5rem;
         }
 
-        .img_div img:hover {
-            box-shadow: 13px 12px 15px -5px rgba(0,0,0,0.3);
-            transform: translate(-2%, -2%);
-            transition: all 0.5s ease;
-            transform-style: preserve-3d;
-        }
-
 .technologies_div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border-bottom: black .02rem solid;
+    border-bottom: #3b3a36  .02rem solid;
     padding: 2rem 0rem 2rem 0rem;
 }
     .tech {
@@ -99,6 +124,7 @@
     }
         .top {
             font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
         }
             .top p {
                 margin: 0rem 2rem 2rem 2rem;
@@ -106,7 +132,7 @@
 
         .bottom {
             font-family: 'Montserrat', sans-serif;
-            /* margin: 0rem 0rem 0rem 2rem; */
+            font-weight: bold;
         }
             .bottom p {
                 margin: 0rem 1.5rem 0rem 2rem;
@@ -114,3 +140,43 @@
         .tech div {
             display: flex;
         }
+
+@media (max-width: 1024px) {
+    .inq_main_con {
+        height: 250rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .inq_main_con {
+        height: 270rem;
+    }
+
+    .tech {
+        display: flex;
+        flex-wrap: nowrap;
+        /* width: 40rem; */
+        justify-content: center;
+    }
+    .top {
+        /* font-family: 'Montserrat', sans-serif; */
+        /* font-weight: bold; */
+        flex-direction: column;
+    }
+        .top p {
+            margin: 0rem;
+            font-size: 2rem;
+        }
+    .bottom {
+        /* font-family: 'Montserrat', sans-serif; */
+        /* font-weight: bold; */
+        flex-direction: column;
+    }
+        .bottom p {
+            font-size: 2rem;
+        }
+    .img_div img {
+        height: 142;
+        width: 342;
+    }
+}

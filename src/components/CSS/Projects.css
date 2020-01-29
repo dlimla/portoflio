@@ -27,6 +27,11 @@
         z-index: -1;
     }
 
+    .title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 3rem;
+    }
 
 
     .innerContent {
@@ -87,5 +92,4 @@
                     .cardStyle:hover {
                         opacity: 0.5;
                     }
-
 

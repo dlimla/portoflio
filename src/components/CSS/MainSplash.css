@@ -1,3 +1,12 @@
+/* 
+    color scheme
+    #c0dfd9 - lightblue
+    #e9ece5 - light gray
+    #b3c2bf - dark gray blue
+    #3b3a36 - text dark gray
+*/
+
+
 .background {
     background-image: url(../../imgs/backgrounds/main_splash.jpg);
     background-repeat: no-repeat;
@@ -7,8 +16,7 @@
 }
 
 .mainCon {
-    /* background-color:#c0dfd9; */
-    height: 100%;
+    height: 52rem;
     width: 100%;
     overflow: hidden;
     transform: skew(0deg, 10deg);
@@ -28,11 +36,77 @@
     }
 
 
-.innerCon {
-    transform: skew(0deg, -10deg);
-    height: 64rem;
-    /* background-color: #ba9077; */
+    .innerCon {
+        transform: skew(0deg, -10deg);
+        height: 100%;
+    }
+    
+            .mainSplashInfo {
+                justify-content: center;
+                display: flex;
+                align-items: center;
+            }
+                .mainSplashPic {
+                    width: 20rem;
+                    margin: 0rem;
+                }
+                .mainSplashDivider img {
+                    height: 25rem;
+                }
+
+                .mainSplashInfoText {
+                    width: 25%;
+                    text-align: left;
+                    font-family: 'Montserrat', sans-serif;
+
+                }
+
+                .contactMe_div {
+                    display: flex;
+                    justify-content: center;
+                }
+                .contactME {
+
+                    transition: all 1s ease;
+                    text-decoration: none;
+                    font-family: 'Montserrat', sans-serif;
+                }
+                    .contactME img {
+                        width: 70px;
+                        height: 70px;
+                    }
+
+                    .contatme_text {
+                        font-family: 'Montserrat', sans-serif;
+                        text-decoration: none;
+                        color: #3b3a36;
+                        font-weight: bold;
+                    }
+
+                    .contactME:hover{ 
+                        /* background-color: #3b3a36; */
+                        transition: all .4s ease;
+                        filter: brightness(1) invert(0.8);
+
+
+                    }
+
+
+@media (max-width: 480px) {
+
+    .mainCon {
+        height: 70rem;
+    }
+    .mainSplashInfo {
+        flex-direction: column;
     }
 
+    .mainSplashDivider {
+        display: none;
+    }
 
-    
+    .mainSplashInfoText {
+        width: 90%;
+        margin: 2rem;
+    }
+}

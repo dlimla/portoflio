@@ -1,19 +1,39 @@
 
 .navDiv {
     display: flex;
-    margin: 0.5rem 0px 0.5rem 0px;
+    margin: 0.5rem 0px 2rem 0px;
     padding: 1rem;
     flex-direction: row;
     justify-content: center;
-    z-index: 2;
+    z-index: 1;
 }
     .navButtons{
-        margin: 0px 3rem 0px 30px;
+        margin: 0rem 5rem 0rem 5rem;
         transition: all 1s ease;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+
     }
+    .navButtons a {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .navButtons a:visited {
+        color: #3b3a36;
+    }
+
+    .navButtons h4:visited {
+        color: #3b3a36;
+    }
+
     .navButtons img{
         width: 50px;
         height: 50px;
+    }
+
+    .navTitle {
+        text-decoration: none;
     }
     .navButtons:hover .navLabels{
             background-color: #3b3a36;
@@ -27,3 +47,11 @@
             .navLabels {
                 visibility: hidden;
             }
+
+
+@media (max-width: 1024px) {
+    .navButtons {
+        margin: 0rem 3rem 0rem 3rem;
+
+    }
+}

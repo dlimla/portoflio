@@ -69,23 +69,15 @@ export default class Resume extends Component {
 
                 <div className="resume_main_con">
                     <div className="resume_inner_con">
-
-                        <Nav/>
-                        <div className="outter_div">
+                        <div  data-aos="fade">
+                            <Nav/>
+                        </div>
+                        <div className="outter_div" data-aos="fade-up" data-aos-duration="1000">
                             <div className="main_div">
-                                <div className="my_desc_div">
-                                    <h2>About Me</h2>
-                                    <p>
-                                        A Full Stack Web/Software Developer with 4+ years working as a contractual website designer and 3D Generalist.
-                                    </p>
-                                    <p>
-                                        An Additional 4+ years as a department head for the DIY Home Center.  Managing employee work ethic and communicating with vendors to have relevent items to sell.
-                                    </p>
-                                </div>
 
-                                <h2 className="contact_me_title">Contact Me</h2>
+                                <h2 className="contact_me_title"  data-aos="fade-up" data-aos-duration="1200">Contact Me</h2>
 
-                                <div className="media_div_contact">
+                                <div className="media_div_contact"  data-aos="fade-up" data-aos-duration="1400">
                                     <div className="contact_div">
                                         {this.state.contact1.map((contact) =>
                                             <div class="flip-card">
@@ -153,9 +145,9 @@ export default class Resume extends Component {
                                     <p><a href="https://github.com/dlimla" target="_blank">Website</a></p>
                                 </div>
 
-                                <h2 className="skills_title">Skills</h2>
+                                <h2 className="skills_title" data-aos="fade-up" data-aos-duration="1500">Skills</h2>
 
-                                <div className="skills_div">
+                                <div className="skills_div"  data-aos="fade-up" data-aos-duration="1700">
 
                                         {this.state.tech.map((tech) =>
                                             <div className="main_skill_media_list">
@@ -184,7 +176,6 @@ export default class Resume extends Component {
                                     </div>
 
                                 </div>
-
                                 <div className="work_edu_exp_div">
                                     <div className="edu_div">
                                             <h2>Education</h2>

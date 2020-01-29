@@ -36,8 +36,15 @@
         flex-direction: column;
         justify-content: center;
     }
-        .my_desc_div h2 {
+        .about_me_title {
             font-family: 'Montserrat', sans-serif;
+            /* border-bottom: solid black 1px; */
+            /* margin: 0rem 0rem 2rem 0rem; */
+            display: flex;
+            justify-content: center;
+            margin: 4rem 0rem 2rem 0rem;
+
+            /* margin: 0rem 3rem 0rem 3rem; */
         }
 
         .my_desc_div p {
@@ -50,11 +57,23 @@
         .contact_div {
             display: flex;
             justify-content: center;
+            /* align-items: center; */
             flex-wrap: wrap;
-            margin: 3rem 0rem 0rem 0%;
+            margin: 0rem 0rem 0rem 0%;
             width: 100%;
-
         }
+            .contact_me_title {
+                font-family: 'Montserrat', sans-serif;
+                /* width: 50%; */
+                /* border-bottom: solid black 1px; */
+                margin: 4rem 0rem 2rem 0rem;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                /* display: flex; */
+                /* justify-content: center; */
+            }
         .hidden_media_contact_list {
             visibility: hidden;
             position: absolute;
@@ -194,29 +213,33 @@
     .work_edu_exp_div {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        /* width: 100%; */
     }
 
     .edu_div {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        width:35rem;
-        margin: 0rem 0rem 0rem 5rem;
+        /* justify-content: center; */
+        /* text-align: center; */
+        width:100%;
+        padding: 0rem 2rem 0rem .2rem;
+        margin: 0rem 4rem 0rem 2rem;
+        /* margin: 0rem 0rem 0rem 5rem; */
     }
 
     .rightDiv {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        width:35rem;
-        margin: 0rem 0rem 0rem 5rem;
+        /* justify-content: center; */
+        /* text-align: center; */
+        width:100%;
+        padding: 0rem 2rem 0rem .2rem;
+        margin: 0rem 4rem 0rem 2rem;
     }
 
     .ul_list{
-        list-style-type: none;
+        /* list-style-type: none; */
+        width: 70%;
     }
 
     .contact_div {
@@ -248,13 +271,16 @@
         position: relative;
     }
 
-
+    .contact_me_title, .about_me_title, .skills_title {
+        border-bottom: solid black 1px;
+        padding: 0rem 0rem .5rem 0rem
+    }
 }
 
 @media (max-width: 480px) {
 
     .resume_inner_con {
-        height: 390rem;
+        height: 320rem;
     }
 
     .contact_div {
@@ -266,18 +292,18 @@
         display: flex;
         flex-direction: column;
         /* justify-content: flex-start; */
-        text-align: left;
+        /* text-align: left;
         width:15rem;
-        margin: 0rem 0rem 0rem 7rem;
+        margin: 0rem 0rem 0rem 7rem; */
     }
 
     .rightDiv {
         display: flex;
         flex-direction: column;
         /* justify-content: flex-start; */
-        text-align: left;
+        /* text-align: left;
         width:15rem;
-        margin: 0rem 0rem 0rem 7rem;
+        margin: 0rem 0rem 0rem 7rem; */
     }
 
     .main_skill_media_list {
