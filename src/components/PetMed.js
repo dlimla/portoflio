@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {NavLink} from 'react-router-dom'
+// import {NavLink} from 'react-router-dom'
 import ExternalLinks from './ExternalLinks'
 
 import './CSS/MainSplash.css'
@@ -9,8 +9,8 @@ import Nav from './Nav'
 import splash from '../imgs/inquirysnaps/splash.JPG'
 import splash2 from '../imgs/inquirysnaps/splash2.JPG'
 
-import UserCalander from '../imgs/inquirysnaps/calander.JPG'
-import ContrCalander from '../imgs/inquirysnaps/contractorCalender.JPG'
+// import UserCalander from '../imgs/inquirysnaps/calander.JPG'
+// import ContrCalander from '../imgs/inquirysnaps/contractorCalender.JPG'
 
 
 export default class PetMed extends Component{
@@ -31,8 +31,8 @@ export default class PetMed extends Component{
                             <div className="div_border">
                                 <h2 className="inq_title" data-aos="fade">Pet Med</h2>
                                 <div className="inq_links" data-aos="flip-up">
-                                    <p><a href=""target="blank">Go to Site</a></p>
-                                    <p><a href="https://github.com/RandallSnout/PetMed" target="blank">Visit the GitHub</a></p>
+                                    {/* <p><a href=""target="blank">Go to Site</a></p> */}
+                                    <p><a href="https://github.com/RandallSnout/PetMed" target="blank" rel="noopener noreferrer">Visit the GitHub</a></p>
                                 </div>
                             </div>
 

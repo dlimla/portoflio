@@ -16,14 +16,19 @@ export default class ExternalLinks extends Component {
                         href="https://www.linkedin.com/in/danheelim/"
                         target="_blank"
                         rel="noopener noreferrer">
-                            <img className="external_navButtons"src={LinkedIn}/>
+                            <img 
+                                className="external_navButtons"src={LinkedIn}
+                                alt="https://images.app.goo.gl/S8Rj6VwVrQmm6DN96"/>
                     </a>
 
                     <a
                      href="https://github.com/dlimla"
                      target="_blank"
                      rel="noopener noreferrer">
-                         <img className="external_navButtons"src={GitHub}/>
+                         <img 
+                            className="external_navButtons"
+                            src={GitHub}
+                            alt="https://images.app.goo.gl/S8Rj6VwVrQmm6DN96"/>
                     </a>
                 </div>
             </div>

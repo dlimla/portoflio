@@ -30,10 +30,10 @@ export default class A2Z extends Component{
                         <div className="div_border">
                             <h2 className="inq_title" data-aos="fade" data-aos-duration="5000">A2Z Experiences</h2>
                             <div className="inq_links" data-aos="flip-up">
-                                <p><a href=""target="blank">Go to Site</a></p>
+                                {/* <p><a href=""target="blank">Go to Site</a></p> */}
 
                                 <p><a
-                                    href="https://github.com/a-to-z-experiences-team/build-aToz-FE" target="blank">
+                                    href="https://github.com/a-to-z-experiences-team/build-aToz-FE" target="blank" rel="noopener noreferrer">
                                         Visit the GitHub
                                     </a>
                                 </p>

@@ -99,7 +99,13 @@ export default class Resume extends Component {
                                                     <img  alt={NTF} src={LINKENIN}/>
                                                 </div>
                                                 <div class="flip-card-back">
-                                                    <a className="contact_cardback_link"href="https://www.linkedin.com/in/danheelim/" target="_blank">LinkedIn</a>
+                                                    <a 
+                                                        className="contact_cardback_link"
+                                                        href="https://www.linkedin.com/in/danheelim/" 
+                                                        target="_blank"
+                                                        rel="noopener noreferrer">
+                                                            LinkedIn
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -110,7 +116,13 @@ export default class Resume extends Component {
                                                     <img  alt={NTF} src={GITHUB}/>
                                                 </div>
                                                 <div class="flip-card-back">
-                                                    <a className="contact_cardback_link"href="https://github.com/dlimla" target="_blank">GitHub</a>
+                                                    <a
+                                                        className="contact_cardback_link"
+                                                        href="https://github.com/dlimla" 
+                                                        target="_blank"
+                                                        rel="noopener noreferrer">
+                                                            GitHub
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -125,7 +137,8 @@ export default class Resume extends Component {
                                                         <a
                                                             className="contact_cardback_link"
                                                             href="https://github.com/dlimla"
-                                                            target="_blank">
+                                                            target="_blank"
+                                                            rel="noopener noreferrer">
                                                                 Website
                                                         </a>
                                                     </NavLink>
@@ -140,9 +153,9 @@ export default class Resume extends Component {
                                     <p>danheelim@gmail.com</p>
                                     <p>Los Angeles</p>
                                     <p>(213) 500-4646</p>
-                                    <p><a href="https://www.linkedin.com/in/danheelim/" target="_blank">LinkedIn</a></p>
-                                    <p><a href="https://github.com/dlimla" target="_blank">GitHub</a></p>
-                                    <p><a href="https://github.com/dlimla" target="_blank">Website</a></p>
+                                    <p><a href="https://www.linkedin.com/in/danheelim/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+                                    <p><a href="https://github.com/dlimla" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                                    <p><a href="https://github.com/dlimla" target="_blank" rel="noopener noreferrer">Website</a></p>
                                 </div>
 
                                 <h2 className="skills_title" data-aos="fade-up" data-aos-duration="1500">Skills</h2>

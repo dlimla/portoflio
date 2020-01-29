@@ -12,9 +12,9 @@ import UserCalander from '../imgs/inquirysnaps/calander.JPG'
 import ContrCalander from '../imgs/inquirysnaps/contractorCalender.JPG'
 
 import userFeed from '../imgs/inquirysnaps/feedbackUser.JPG'
-import contrFeed from '../imgs/inquirysnaps/contractorRating.JPG'
+// import contrFeed from '../imgs/inquirysnaps/contractorRating.JPG'
 
-import member1 from '../imgs/inquirysnaps/subscription.JPG'
+// import member1 from '../imgs/inquirysnaps/subscription.JPG'
 import member2 from '../imgs/inquirysnaps/subscription2.JPG'
 
 
