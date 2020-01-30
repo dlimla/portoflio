@@ -80,7 +80,10 @@
     .a2z_main_con {
         height: 190rem;
     }
-
+    .a2z_top p{
+        font-size: 1rem;
+        margin: .2rem 0rem .2rem 0rem;
+    }
 
     .img_div img {
         height: 12rem;
