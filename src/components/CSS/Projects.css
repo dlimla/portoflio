@@ -93,3 +93,18 @@
                         opacity: 0.5;
                     }
 
+@media (max-width: 740px) {
+
+    .mainContainer {
+        height: 72rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .mainContainer {
+        height: 75rem;
+    }
+
+}

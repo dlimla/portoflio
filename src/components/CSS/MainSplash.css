@@ -91,11 +91,18 @@
 
                     }
 
+@media (max-width: 720px) {
+
+    .mainCon {
+        height: 72rem;
+    }
+
+}
 
 @media (max-width: 480px) {
 
     .mainCon {
-        height: 70rem;
+        height: 75rem;
     }
     .mainSplashInfo {
         flex-direction: column;

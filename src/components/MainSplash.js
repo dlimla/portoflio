@@ -48,9 +48,9 @@ export default class MainSplash extends Component{
                                     I'm finding that being a full stack developer allows me to constantly create new experiences for people with interactive designs and functionality.
                                 </p>
 
-                                <p>
+                                {/* <p>
                                     "I'm not a great programmer; I'm just a good programmer with great habits." - Kent Beck
-                                </p>
+                                </p> */}
                             </div>
                         </div>
                         <div className="contactMe_div">
