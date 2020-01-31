@@ -40,56 +40,56 @@
         transform: skew(0deg, -10deg);
         height: 100%;
     }
-    
-            .mainSplashInfo {
-                justify-content: center;
-                display: flex;
-                align-items: center;
+
+        .mainSplashInfo {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+            .mainSplashPic {
+                width: 20rem;
+                margin: 0rem;
             }
-                .mainSplashPic {
-                    width: 20rem;
-                    margin: 0rem;
-                }
-                .mainSplashDivider img {
-                    height: 25rem;
+            .mainSplashDivider img {
+                height: 25rem;
+            }
+
+            .mainSplashInfoText {
+                width: 25%;
+                text-align: left;
+                font-family: 'Montserrat', sans-serif;
+
+            }
+
+            .contactMe_div {
+                display: flex;
+                justify-content: center;
+            }
+            .contactME {
+
+                transition: all 1s ease;
+                text-decoration: none;
+                font-family: 'Montserrat', sans-serif;
+            }
+                .contactME img {
+                    width: 70px;
+                    height: 70px;
                 }
 
-                .mainSplashInfoText {
-                    width: 25%;
-                    text-align: left;
+                .contatme_text {
                     font-family: 'Montserrat', sans-serif;
-
-                }
-
-                .contactMe_div {
-                    display: flex;
-                    justify-content: center;
-                }
-                .contactME {
-
-                    transition: all 1s ease;
                     text-decoration: none;
-                    font-family: 'Montserrat', sans-serif;
+                    color: #3b3a36;
+                    font-weight: bold;
                 }
-                    .contactME img {
-                        width: 70px;
-                        height: 70px;
-                    }
 
-                    .contatme_text {
-                        font-family: 'Montserrat', sans-serif;
-                        text-decoration: none;
-                        color: #3b3a36;
-                        font-weight: bold;
-                    }
-
-                    .contactME:hover{ 
-                        /* background-color: #3b3a36; */
-                        transition: all .4s ease;
-                        filter: brightness(1) invert(0.8);
+                .contactME:hover{ 
+                    /* background-color: #3b3a36; */
+                    transition: all .4s ease;
+                    filter: brightness(1) invert(0.8);
 
 
-                    }
+                }
 
 @media (max-width: 720px) {
 

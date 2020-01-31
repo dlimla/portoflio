@@ -40,7 +40,7 @@ export default class PetMed extends Component{
                             <div className="div_border">
                                 <h2 className="inq_title" data-aos="fade">Pet Med</h2>
                                 <div className="inq_links" data-aos="flip-up">
-                                    <p><a href="http://petmedmd.com/about"target="blank">Go to Site</a></p>
+                                    <p><a href="http://petmedmd.com"target="blank">Go to Site</a></p>
                                     <p><a href="https://github.com/RandallSnout/PetMed" target="blank" rel="noopener noreferrer">Visit the GitHub</a></p>
                                 </div>
                             </div>

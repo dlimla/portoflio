@@ -7,7 +7,6 @@
 }
 
 .pet_main_con {
-    /* background-color: #e9ece5; */
     height: 140rem;
     width: 100%;
     overflow: hidden;
@@ -34,7 +33,6 @@
 
 @media (max-width: 480px) {
 
-    
     .pet_main_con {
         height: 220rem;
     }
