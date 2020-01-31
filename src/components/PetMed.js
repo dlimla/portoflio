@@ -3,11 +3,20 @@ import React, { Component } from 'react'
 import ExternalLinks from './ExternalLinks'
 
 import './CSS/MainSplash.css'
+import './CSS/PetMed.css'
 import './CSS/Nav.css';
 import Nav from './Nav'
 
 import splash from '../imgs/inquirysnaps/splash.JPG'
 import splash2 from '../imgs/inquirysnaps/splash2.JPG'
+
+import one from '../imgs/petMedsnaps/1.JPG'
+import two from '../imgs/petMedsnaps/2.JPG'
+import three from '../imgs/petMedsnaps/3.JPG'
+import four from '../imgs/petMedsnaps/4.JPG'
+import five from '../imgs/petMedsnaps/5.JPG'
+import six from '../imgs/petMedsnaps/6.JPG'
+
 
 // import UserCalander from '../imgs/inquirysnaps/calander.JPG'
 // import ContrCalander from '../imgs/inquirysnaps/contractorCalender.JPG'
@@ -31,7 +40,7 @@ export default class PetMed extends Component{
                             <div className="div_border">
                                 <h2 className="inq_title" data-aos="fade">Pet Med</h2>
                                 <div className="inq_links" data-aos="flip-up">
-                                    {/* <p><a href=""target="blank">Go to Site</a></p> */}
+                                    <p><a href="http://petmedmd.com/about"target="blank">Go to Site</a></p>
                                     <p><a href="https://github.com/RandallSnout/PetMed" target="blank" rel="noopener noreferrer">Visit the GitHub</a></p>
                                 </div>
                             </div>
@@ -63,30 +72,45 @@ export default class PetMed extends Component{
                                 </div>
 
                                 <div className="img_div">
-                                    <img src={splash} alt="Smiley face" height="242" width="442" data-aos="fade-right"/>
-                                    <img src={splash2} alt="Smiley face" height="242" width="442" data-aos="fade-left"/>
+                                    <img src={one} alt="Smiley face" height="242" width="442" data-aos="fade-right"/>
+                                    <img src={two} alt="Smiley face" height="242" width="442" data-aos="fade-left"/>
                                 </div>
                             </div>
 
                             <div>
                                 <h4 className="features">Features</h4>
+
                                 <div className="section_div">
                                     <div className="sectionText_div">
                                         <div className="features_div">
                                             <h4>Easy set up and record keeping</h4>
-                                            <p>Personalized profiles lets you keep track of all your pets and relevant medical information.</p>
-                                            <p>Tailored to each pet and their specific needs regardless of medical need and easily accessable from anywhere.</p>
-                                            <img src={splash} alt="Smiley face" height="242" width="442" data-aos="fade-right"/>
+                                            <p>Personalized profiles lets you keep track of all your pets and relevant medical information to each pet and their specific needs.</p>
+                                            <img src={three} alt="Smiley face" height="242" width="442" data-aos="fade-right"/>
+                                        </div>
+                                    <div className="features_div">
+                                            <h4>Personalized Veternarian profiles.</h4>
+                                            <p>Keep track of all your clients and in turn all their pets and all relivent data.</p>
+                                            <img src={four} alt="Smiley face" height="242" width="442" data-aos="fade-left"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="section_div">
+                                    <div className="sectionText_div">
+                                        <div className="features_div">
+                                            <h4>Moblie Friendly</h4>
+                                            <p>No longer need to carry a large binder of paperwork. Just simply load the app.</p>
+                                            <img src={six} alt="Smiley face" height="242" width="442" data-aos="fade-right"/>
                                         </div>
 
                                         <div className="features_div">
                                             <h4>Find local vets and clinics without fumbling around</h4>
                                             <p>Utilizing GoogleAPI with maps and locations we can easily find any number of local vets and clinics that would suit your current needs.</p>
-                                            <p>This allows you to quickly search up a vetenarians information from track record to career years. No more guess work.</p>
-                                            <img src={splash} alt="Smiley face" height="242" width="442" data-aos="fade-left"/>
+                                            <img src={five} alt="Smiley face" height="242" width="442" data-aos="fade-left"/>
                                         </div>
                                     </div>
                                 </div>
+
 
                             </div>
 

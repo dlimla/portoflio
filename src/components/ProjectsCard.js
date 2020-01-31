@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 import a2z from '../imgs/projectThumbs/a2zIMG.png'
 import inq from '../imgs/projectThumbs/INQ.jpg'
 import ta from '../imgs/projectThumbs/TA.jpg'
-// import pm from '../imgs/projectThumbs/PETMED.jpg'
+import pm from '../imgs/projectThumbs/PETMED.jpg'
 // import stone from '../imgs/projectThumbs/stone.jpg'
 // import reel from '../imgs/projectThumbs/reel.jpg'
 
@@ -23,14 +23,14 @@ export default class MainSplash extends Component {
                     </NavLink>
                 </div>
 
-                <div className="cardStyle" data-aos="zoom-out-up">
+                {/* <div className="cardStyle" data-aos="zoom-out-up">
                     <NavLink to="/a2z">
                         <div className = "front">
                             <h2>AtoZ Experiences</h2>
                             <img src={a2z} alt="https://images.app.goo.gl/S8Rj6VwVrQmm6DN96"/>
                         </div>
                     </NavLink>
-                </div>
+                </div> */}
 
                 <div className="cardStyle" data-aos="zoom-out-up">
                     <NavLink to="taylorAsh">
@@ -41,14 +41,14 @@ export default class MainSplash extends Component {
                     </NavLink>
                 </div>
 
-                {/* <div className="cardStyle">
+                <div className="cardStyle" data-aos="zoom-out-up">
                     <NavLink to="petmed">
                         <div className = "front">
                             <h2>PetMed</h2>
                             <img src={pm} alt="https://images.app.goo.gl/S8Rj6VwVrQmm6DN96"/>
                         </div>
                     </NavLink>
-                </div> */}
+                </div>
 
                 {/* <div className="cardStyle" data-aos="zoom-out-up">
                     <div className = "front">
