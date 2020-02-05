@@ -16,7 +16,7 @@
 }
 
 .mainCon {
-    height: 52rem;
+    height: 72rem;
     width: 100%;
     overflow: hidden;
     transform: skew(0deg, 10deg);
@@ -61,6 +61,17 @@
 
             }
 
+            .mainSkill_div {
+                display: flex;
+                justify-content: center;
+
+            }
+            .mainSplashSkills {
+                width: 55%;
+                margin: 0rem 0rem 2rem 0rem;
+            }
+
+
             .contactMe_div {
                 display: flex;
                 justify-content: center;
@@ -71,17 +82,18 @@
                 text-decoration: none;
                 font-family: 'Montserrat', sans-serif;
             }
-                .contactME img {
-                    width: 70px;
-                    height: 70px;
-                }
+            .contactME img {
+                width: 70px;
+                height: 70px;
+                /* margin: 2rem 0rem 0rem 0rem; */
+            }
 
-                .contatme_text {
-                    font-family: 'Montserrat', sans-serif;
-                    text-decoration: none;
-                    color: #3b3a36;
-                    font-weight: bold;
-                }
+            .contatme_text {
+                font-family: 'Montserrat', sans-serif;
+                text-decoration: none;
+                color: #3b3a36;
+                font-weight: bold;
+            }
 
                 .contactME:hover{ 
                     /* background-color: #3b3a36; */
@@ -90,6 +102,13 @@
 
 
                 }
+@media (max-width: 1020px) {
+
+    .mainCon {
+        height: 100rem;
+    }
+
+}
 
 @media (max-width: 720px) {
 
@@ -102,7 +121,7 @@
 @media (max-width: 480px) {
 
     .mainCon {
-        height: 75rem;
+        height: 120rem;
     }
     .mainSplashInfo {
         flex-direction: column;

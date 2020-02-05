@@ -1,5 +1,5 @@
 .resume_background {
-    background-image: url(../../imgs/backgrounds/resume_background.jpg);
+    /* background-image: url(../../imgs/backgrounds/resume_background.jpg); */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -147,8 +147,9 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            width: 65%;
-            margin: 0rem 0rem 0rem 18%;
+
+            /* width: 100%; */
+            /* margin: 0rem 0rem 0rem 18%; */
         }
 
                 .cardFront, .cardBack {

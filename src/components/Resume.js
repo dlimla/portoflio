@@ -5,6 +5,7 @@ import {NavLink} from 'react-router-dom'
 import './CSS/Resume.css';
 import Nav from './Nav'
 import ExternalLinks from './ExternalLinks'
+// import Skills from './Skills.js'
 
 import JS from '../imgs/technologies/JS.png'
 import API from '../imgs/technologies/API.png'

@@ -4,6 +4,7 @@ import React, { Component } from 'react'
 
 import './CSS/MainSplash.css'
 import Nav from './Nav'
+import Skills from './Skills.js'
 
 import ExternalLinks from './ExternalLinks'
 import EMAIL from '../imgs/contact/EMAIL1.png'
@@ -53,10 +54,14 @@ export default class MainSplash extends Component{
                                 </p> */}
                             </div>
                         </div>
+                        <div className="mainSkill_div">
+                            <div className="mainSplashSkills">
+                                <Skills/>
+                            </div>
+                        </div>
+
                         <div className="contactMe_div">
-                            <div className="contactME" 
-                                // data-aos="fade-down"
-                                >
+                            <div className="contactME" >
                                 <a className="contatme_text" href="mailto:danheelim@gmail.com">
                                     <img src={EMAIL} alt="https://images.app.goo.gl/S8Rj6VwVrQmm6DN96"/>
                                     <p >Contact Me!</p>
