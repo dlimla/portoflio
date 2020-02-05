@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-// import {NavLink} from 'react-router-dom'
-// import actualResume from '../imgs/resume.pdf'
 
 import './CSS/MainSplash.css'
 import Nav from './Nav'
@@ -10,10 +8,6 @@ import ExternalLinks from './ExternalLinks'
 import EMAIL from '../imgs/contact/EMAIL1.png'
 import DIVIDER from '../imgs/contact/divider.png'
 import profilePic from '../imgs/contact/mainSplashPic.png'
-
-// import projects from '../imgs/navPics/projects.png'
-// import profile from '../imgs/navPics/home.png'
-// import resume from '../imgs/navPics/resume.png'
 
 export default class MainSplash extends Component{
     render() {
@@ -49,9 +43,6 @@ export default class MainSplash extends Component{
                                     I'm finding that being a full stack developer allows me to constantly create new experiences for people with interactive designs and functionality.
                                 </p>
 
-                                {/* <p>
-                                    "I'm not a great programmer; I'm just a good programmer with great habits." - Kent Beck
-                                </p> */}
                             </div>
                         </div>
                         <div className="mainSkill_div">

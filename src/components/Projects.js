@@ -9,9 +9,6 @@ import './CSS/Nav.css';
 
 
 export default class MainSplash extends Component {
-    componentDidMount() {
-        window.scrollTo(0,0)
-    }
     render() {
         return(
             <div className="projects_background">

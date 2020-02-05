@@ -20,10 +20,6 @@ import EXPRESS from '../imgs/technologies/EXPRESS.png'
 import TEST from '../imgs/technologies/TEST.png'
 import NTF from '../imgs/technologies/NOTFN.png'
 
-import EMAIL from '../imgs/contact/EMAIL.png'
-import LOCATION from '../imgs/contact/LOCATION.png'
-import PHONE from '../imgs/contact/PHONE.png'
-
 export default class Resume extends Component {
     constructor(props){
         super(props);
@@ -35,7 +31,7 @@ export default class Resume extends Component {
                 {name: 'Redux', pic:REDUX},
                 {name: 'Python', pic:PYTHON},
                 {name: 'RESTful API', pic:API},
-                {name: "Data Structure", pic:DATASTRUC},
+                {name: "Data Structures", pic:DATASTRUC},
                 {name: 'Express', pic:EXPRESS},
                 {name: 'NodeJS', pic:NODEJS},
                 {name: 'Django', pic:DJG},
@@ -43,12 +39,6 @@ export default class Resume extends Component {
                 {name: 'SQL', pic:SQL},
                 {name: 'HTML', pic:HTML},
                 {name: 'CSS', pic:CSS},
-            ],
-
-            contact1: [
-                {link:'danheelim @gmail.com', pic:EMAIL},
-                {link:'Los Angeles', pic:LOCATION},
-                {link:'(213) 500-4646', pic:PHONE},
             ]
 
         }

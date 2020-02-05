@@ -85,7 +85,6 @@
             .contactME img {
                 width: 70px;
                 height: 70px;
-                /* margin: 2rem 0rem 0rem 0rem; */
             }
 
             .contatme_text {
@@ -96,26 +95,27 @@
             }
 
                 .contactME:hover{ 
-                    /* background-color: #3b3a36; */
                     transition: all .4s ease;
                     filter: brightness(1) invert(0.8);
 
 
                 }
 @media (max-width: 1020px) {
-
     .mainCon {
         height: 100rem;
     }
+}
 
+@media (max-width: 1500px) {
+    .mainCon {
+        height: 100rem;
+    }
 }
 
 @media (max-width: 720px) {
-
     .mainCon {
         height: 72rem;
     }
-
 }
 
 @media (max-width: 480px) {
@@ -126,11 +126,9 @@
     .mainSplashInfo {
         flex-direction: column;
     }
-
     .mainSplashDivider {
         display: none;
     }
-
     .mainSplashInfoText {
         width: 90%;
         margin: 2rem;
