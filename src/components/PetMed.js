@@ -7,9 +7,6 @@ import './CSS/PetMed.css'
 import './CSS/Nav.css';
 import Nav from './Nav'
 
-import splash from '../imgs/inquirysnaps/splash.JPG'
-import splash2 from '../imgs/inquirysnaps/splash2.JPG'
-
 import one from '../imgs/petMedsnaps/1.JPG'
 import two from '../imgs/petMedsnaps/2.JPG'
 import three from '../imgs/petMedsnaps/3.JPG'
@@ -17,14 +14,11 @@ import four from '../imgs/petMedsnaps/4.JPG'
 import five from '../imgs/petMedsnaps/5.JPG'
 import six from '../imgs/petMedsnaps/6.JPG'
 
-
-// import UserCalander from '../imgs/inquirysnaps/calander.JPG'
-// import ContrCalander from '../imgs/inquirysnaps/contractorCalender.JPG'
-
-
 export default class PetMed extends Component{
 
-
+    componentDidMount() {
+        window.scrollTo(0,0)
+    }
     render() {
         return(
             <div>

@@ -18,7 +18,9 @@ import about from '../imgs/TA_port/about.JPG'
 import Summary from '../imgs/TA_port/Summary.JPG'
 
 export default class TaylorAsh extends Component{
-
+    componentDidMount() {
+        window.scrollTo(0,0)
+    }
 
     render() {
         return(

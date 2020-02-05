@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 
-import a2z from '../imgs/projectThumbs/a2zIMG.png'
+// import a2z from '../imgs/projectThumbs/a2zIMG.png'
 import inq from '../imgs/projectThumbs/INQ.jpg'
 import ta from '../imgs/projectThumbs/TA.jpg'
 import pm from '../imgs/projectThumbs/PETMED.jpg'

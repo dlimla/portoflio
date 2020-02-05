@@ -20,7 +20,9 @@ import member2 from '../imgs/inquirysnaps/subscription2.JPG'
 
 export default class MainSplash extends Component{
 
-
+    componentDidMount() {
+        window.scrollTo(0,0)
+    }
     render() {
         return(
             <div className="inq_background">
