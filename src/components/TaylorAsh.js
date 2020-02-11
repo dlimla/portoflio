@@ -35,7 +35,7 @@ export default class TaylorAsh extends Component{
 
                         <div className="div_border">
 
-                            <h2 className="inq_title" data-aos="fade">Taylor Ashe Portfolio Site</h2>
+                            <h2 className="inq_title" data-aos="fade">Taylor Ash Portfolio Site</h2>
                             <div className="inq_links" data-aos="flip-up">
                                 <p><a href="http://danheelim.com/ashanimation/"target="blank">Go to Site</a></p>
                                 {/* <p><a href="https://github.com/pt3-labs-contractor/PT3Labs_Contractor_FE" target="blank">Visit the GitHub</a></p> */}
